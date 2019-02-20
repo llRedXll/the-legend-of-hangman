@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;   /* this defines what 1rem is */
+    font-family: 'Press Start 2P', monospace;
+}
+
+body {
+    background-color: #171717;
+    padding: 3rem 5rem;
+}
+
+
+.main-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:grid;
+    grid-template-areas: 
+        'logo info info'
+        'link-img info info'
+        'footer footer footer';
+
+}
+
+.logo-section {
+    grid-area: logo;
+}
+
+.logo {
+    max-height:14rem;
+    height: auto;
+}
+
+.link-section {
+    grid-area: link-img;
+}
+
+.link-img {
+    max-height: 55rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+.content {
+    grid-area: info;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro-text {
+     border: 2px solid #ffffff;
+     padding: 1rem;
+}
+
+.win-text {
+    font-size: 2.5rem;
+    color: #96a550;
+}
+
+.win-counter {
+    margin-top: 1rem;
+}
+
+.underscores {
+    margin-top: 1rem;
+
+}
+
+.hearts-container {
+    display:flex;
+    justify-content: center;
+}
+
+.heart-img {
+    max-height: 2.5rem;
+    margin-top: 1rem;
+}
+
+.heart-img:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(26, 26, 26);
+}
+
+
